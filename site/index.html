@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cluj Job Kit</title>
+<meta name="description" content="Joburi tech pentru studenți, din Cluj și toată România. Actualizat zilnic. / Tech jobs for students in Romania, updated daily.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Big+Shoulders+Display:wght@700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231F4E99'/><path d='M8 22h16M10 10h12v8H10z' stroke='%23F2B705' stroke-width='3' fill='none'/></svg>">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./">Cluj Job Kit</a>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang="ro" aria-pressed="true">RO</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow" data-i18n="eyebrow"></p>
+    <h1><span id="count" class="count">···</span> <span data-i18n="headline"></span></h1>
+    <p class="sub"><span data-i18n="sub"></span> <span id="updated" class="mono"></span></p>
+  </section>
+
+  <form class="filters" id="filters" onsubmit="return false">
+    <fieldset>
+      <legend data-i18n="f_city"></legend>
+      <div class="chips" id="f-city"></div>
+    </fieldset>
+    <fieldset>
+      <legend data-i18n="f_level"></legend>
+      <div class="chips" id="f-level"></div>
+    </fieldset>
+    <fieldset>
+      <legend data-i18n="f_field"></legend>
+      <div class="chips" id="f-field"></div>
+    </fieldset>
+    <div class="row">
+      <label class="search">
+        <span class="sr" data-i18n="search"></span>
+        <input id="q" type="search" autocomplete="off">
+      </label>
+      <label class="toggle"><input id="fresh" type="checkbox"> <span data-i18n="fresh"></span></label>
+      <button type="button" id="reset" class="link" data-i18n="reset"></button>
+    </div>
+  </form>
+
+  <section class="board" aria-live="polite">
+    <div class="board-head" aria-hidden="true">
+      <span data-i18n="col_day"></span><span data-i18n="col_job"></span><span data-i18n="col_city"></span><span data-i18n="col_level"></span><span></span>
+    </div>
+    <ol id="list" class="rows"></ol>
+    <p id="empty" class="empty" hidden></p>
+    <button type="button" id="more" class="more" hidden></button>
+  </section>
+
+  <section class="elsewhere">
+    <h2 data-i18n="elsewhere_h"></h2>
+    <p data-i18n="elsewhere_p"></p>
+    <ul id="links" class="links"></ul>
+  </section>
+
+  <section class="about">
+    <div>
+      <h2 data-i18n="how_h"></h2>
+      <p data-i18n="how_p"></p>
+    </div>
+    <div>
+      <h2 data-i18n="cv_h"></h2>
+      <p data-i18n-html="cv_p"></p>
+    </div>
+    <div>
+      <h2 data-i18n="add_h"></h2>
+      <p data-i18n-html="add_p"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p data-i18n-html="credits"></p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

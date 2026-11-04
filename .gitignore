@@ -1,0 +1,9 @@
+# Personal data: your CV facts, CVs, scan state. Never commit.
+/kit/me/
+
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+.vercel
+/kit/examples/demo-me/cvs/

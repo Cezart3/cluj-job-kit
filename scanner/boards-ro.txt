@@ -1,0 +1,45 @@
+# Companies with jobs in Romania. Read every day.
+# One board per line:  source:slug | Display name
+# Sources: greenhouse, lever, ashby, smartrecruiters, workable, recruitee
+# How to find a company's board: open its careers page and look at the job links:
+#   job-boards.greenhouse.io/<slug>   jobs.lever.co/<slug>   jobs.ashbyhq.com/<slug>
+#   jobs.smartrecruiters.com/<slug>   apply.workable.com/<slug>   <slug>.recruitee.com
+# Add yours with a pull request. See CONTRIBUTING.md.
+
+# SmartRecruiters (filtered to Romania by the API)
+smartrecruiters:boschgroup | Bosch
+smartrecruiters:continental | Continental
+smartrecruiters:aumovio | Aumovio
+smartrecruiters:endava | Endava
+smartrecruiters:accesa | Accesa
+smartrecruiters:coera | COERA
+smartrecruiters:frequentis | Frequentis
+smartrecruiters:gameloft | Gameloft
+
+# Greenhouse
+greenhouse:cresta | Cresta
+greenhouse:emag | eMAG
+greenhouse:explorasolutions | Explora
+greenhouse:axon | Axon
+greenhouse:stripe | Stripe
+greenhouse:elastic | Elastic
+greenhouse:thoughtworks | Thoughtworks
+
+# Lever
+lever:techquarter | TechQuarter
+lever:qualysoft | Qualysoft
+lever:caseware | CaseWare
+lever:dlocal | dLocal
+
+# Ashby
+ashby:uipath | UiPath
+ashby:kraken.com | Kraken
+ashby:n8n | n8n
+ashby:snyk | Snyk
+ashby:block-labs | Block Labs
+ashby:alchemy | Alchemy
+ashby:oyster | Oyster
+ashby:mollie | Mollie
+
+# Workable
+workable:flowxai | FlowX.AI
